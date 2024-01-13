@@ -452,6 +452,11 @@
     "@tanstack/query-core" "4.36.1"
     use-sync-external-store "^1.2.0"
 
+"@total-typescript/ts-reset@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@total-typescript/ts-reset/-/ts-reset-0.5.1.tgz#93b0535d00faa588518bcfb0db30182e63e4f7af"
+  integrity sha512-AqlrT8YA1o7Ff5wPfMOL0pvL+1X+sw60NN6CcOCqs658emD6RfiXhF7Gu9QcfKBH7ELY2nInLhKSCWVoNL70MQ==
+
 "@types/json-schema@^7.0.11":
   version "7.0.15"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
@@ -478,10 +483,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@18.2.15":
-  version "18.2.15"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.15.tgz#14792b35df676c20ec3cf595b262f8c615a73066"
-  integrity sha512-oEjE7TQt1fFTFSbf8kkNuc798ahTUzn3Le67/PWjE8MAfYAD/qB7O8hSTcromLFqHCt9bcdOg5GXMokzTjJ5SA==
+"@types/react@^18.2.47":
+  version "18.2.47"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.47.tgz#85074b27ab563df01fbc3f68dc64bf7050b0af40"
+  integrity sha512-xquNkkOirwyCgoClNk85BjP+aqnIS+ckAJ8i37gAbDs14jfW/J23f2GItAf33oiUPQnqNMALiFeoM9Y5mbjpVQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -852,10 +857,10 @@ eslint-plugin-react-hooks@4.6.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz#4c3e697ad95b77e93f8646aaa1630c1ba607edd3"
   integrity sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==
 
-eslint-plugin-react-refresh@0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.4.3.tgz#59dae8c00a119f06ea16b1d3e6891df3775947c7"
-  integrity sha512-Hh0wv8bUNY877+sI0BlCUlsS0TYYQqvzEwJsJJPM2WF4RnTStSnSR3zdJYa2nPOJgg3UghXi54lVyMSmpCalzA==
+eslint-plugin-react-refresh@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.4.5.tgz#6b9b307bad3feba2244ef64a1a15485ac70a2d0f"
+  integrity sha512-D53FYKJa+fDmZMtriODxvhwrO+IOqrxoEo21gMA0sjHdU6dPVH4OhyFip9ypl8HOF5RV5KdTo+rBQLvnY2cO8w==
 
 eslint-scope@^5.1.1:
   version "5.1.1"
@@ -1097,6 +1102,11 @@ globrex@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/globrex/-/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
   integrity sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
+
+goober@^2.1.10:
+  version "2.1.13"
+  resolved "https://registry.yarnpkg.com/goober/-/goober-2.1.13.tgz#e3c06d5578486212a76c9eba860cbc3232ff6d7c"
+  integrity sha512-jFj3BQeleOoy7t93E9rZ2de+ScC4lQICLwiAQmKMg9F6roKGaLSHoCDYKkWlSafg138jejvq/mTdvmnwDQgqoQ==
 
 grapheme-splitter@^1.0.4:
   version "1.0.4"
@@ -1437,6 +1447,13 @@ react-dom@18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-hot-toast@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/react-hot-toast/-/react-hot-toast-2.4.1.tgz#df04295eda8a7b12c4f968e54a61c8d36f4c0994"
+  integrity sha512-j8z+cQbWIM5LY37pR6uZR6D4LfseplqnuAO4co4u8917hBUvXlEqyP1ZzqVLcqoyUesZZv/ImreoCeHVDpE5pQ==
+  dependencies:
+    goober "^2.1.10"
 
 react-query@^3.39.3:
   version "3.39.3"

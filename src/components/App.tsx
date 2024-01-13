@@ -15,15 +15,9 @@ import {
   SidebarTop,
   SortingControls,
 } from "@/components";
-import { useState } from "react";
-import { useDebounce, useJobItems } from "@/lib/hooks";
+import { Toaster } from "react-hot-toast";
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const debouncedSearchTerm = useDebounce(searchTerm, 250);
-  const { jobItemsSliced, isLoading, totalNumberOfResults } =
-    useJobItems(debouncedSearchTerm);
-
   return (
     <>
       <Background />
@@ -34,17 +28,17 @@ function App() {
           <BookmarksButton />
         </HeaderTop>
 
-        <SearchForm searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        <SearchForm />
       </Header>
 
       <Container>
         <Sidebar>
           <SidebarTop>
-            <ResultsCount totalNumberOfResults={totalNumberOfResults} />
+            <ResultsCount />
             <SortingControls />
           </SidebarTop>
 
-          <JobList jobItems={jobItemsSliced} isLoading={isLoading} />
+          <JobList />
 
           <PaginationControls />
         </Sidebar>
@@ -52,6 +46,8 @@ function App() {
       </Container>
 
       <Footer />
+
+      <Toaster position="top-right" />
     </>
   );
 }

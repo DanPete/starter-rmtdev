@@ -1,22 +1,16 @@
+import { useSearchTermContext } from "@/lib/hooks";
 import type { ChangeEvent, FormEvent } from "react";
 
-type SearchFormProps = {
-  searchTerm: string;
-  setSearchTerm: (searchTerm: string) => void;
-};
+export default function SearchForm() {
+  const { searchTerm, handleChangeSearchTerm } = useSearchTermContext();
 
-export default function SearchForm({
-  searchTerm,
-  setSearchTerm,
-}: SearchFormProps) {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(searchTerm);
   };
 
   const handleChange = async (e: ChangeEvent<HTMLInputElement>) => {
     const newSearchTerm = e.target.value;
-    setSearchTerm(newSearchTerm);
+    handleChangeSearchTerm(newSearchTerm);
   };
 
   return (

@@ -247,6 +247,7 @@ body::-webkit-scrollbar {
   overflow-y: auto;
   background-color: #fff;
   position: relative;
+  min-height: 140px;
   /* height: 100%; */
   flex: 1;
   display: flex;
@@ -654,7 +655,7 @@ body::-webkit-scrollbar {
 }
 
 .pagination__button:hover,
-.pagination__button:focus {
+.pagination__button:focus-visible {
   background-color: #dde2e6;
 }
 
