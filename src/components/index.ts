@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import Header, { HeaderTop } from "./Header";
 import JobItemContent from "./JobItemContent";
 import JobList from "./JobList";
+import JobListSearch from "./JobListSearch";
 import JobListItem from "./JobListItem";
 import Logo from "./Logo";
 import PaginationControls from "./PaginationControls";
@@ -29,6 +30,7 @@ export {
   HeaderTop,
   JobItemContent,
   JobList,
+  JobListSearch,
   JobListItem,
   Logo,
   PaginationControls,

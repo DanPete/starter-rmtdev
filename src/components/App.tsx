@@ -6,7 +6,7 @@ import {
   Header,
   HeaderTop,
   JobItemContent,
-  JobList,
+  JobListSearch,
   Logo,
   PaginationControls,
   ResultsCount,
@@ -38,7 +38,7 @@ function App() {
             <SortingControls />
           </SidebarTop>
 
-          <JobList />
+          <JobListSearch />
 
           <PaginationControls />
         </Sidebar>
